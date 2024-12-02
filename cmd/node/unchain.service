@@ -1,0 +1,13 @@
+[Unit]
+Description=Emissary Proxy Node Sever of Vless over Websocket
+After=network.target
+
+[Service]
+ExecStart=/app/unchain
+Restart=always
+User=root
+WorkingDirectory=/app
+
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+#
+#
+# Warnning use ' for string not " if you want to use deploy.sh
+SubAddresses = ['n-us1.libgragen.cn:80'] # host can be visited by internet
+ListenAddr = '0.0.0.0:80' # websocket server listen address
+RegisterUrl = '' #the master admin server for user auth,data traffic. can be empty if you only want to use the node for yourself
+RegisterToken = ''# can be empty string if you only want to use the node for yourself
+AllowUsers = '6fe57e3f-e618-4873-ba96-a76adec22ccd,6fe57e3f-e618-4873-ba96-a76adec22cce' # UUID string eg. '6fe57e3f-e618-4873-ba96-a76adec22ccd,6fe57e3f-e618-4873-ba96-a76adec22cce'  can not be empty if you want to use the node for yourself in standalone mode
+LogFile = '' # can be empty if you don't want to log to file, so the log will be print to stdout
+DebugLevel = 'debug' # debug, info, warn, error
